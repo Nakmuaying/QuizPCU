@@ -1,4 +1,4 @@
-const CACHE = "quiz-pcu-4fc9bd08eb";
+const CACHE = "quiz-pcu-fd1ed49c00";
 const FILES = ["./", "index.html", "manifest.webmanifest", "icon.svg"];
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
